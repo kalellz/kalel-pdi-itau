@@ -199,123 +199,123 @@ export default function RoadmapPage() {
       <AnimatedGridPattern maxOpacity={0.1} />
       <Navbar />
       
-      <main className="relative z-10 flex flex-col w-full p-4 md:p-8 pt-24">
+      <main className="relative z-10 flex flex-col w-full p-4 pt-32 md:pt-24 md:p-8">
         <div className="flex items-center justify-center w-full">
-          <div className="w-full max-w-4xl space-y-12 py-12">
+          <div className="w-full max-w-4xl space-y-6 md:space-y-8 py-8 md:py-12">
             {/* Header */}
             <div className="text-center">
-              <h1 className="p-8 text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 dark:from-blue-400 dark:to-purple-400">
+              <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 dark:from-blue-400 dark:to-purple-400">
                 Roadmap de Aprendizado
               </h1>
-              <p className="text-lg text-zinc-600 dark:text-zinc-400">Tecnologias para 100% de manutenção do produto</p>
+              <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400">Tecnologias para 100% de manutenção do produto</p>
             </div>
 
             {/* Ordem de Estudo Sugerida */}
-            <div className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl border border-purple-200 dark:border-purple-800 p-8">
-              <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6">
+            <div className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl border border-purple-200 dark:border-purple-800 p-5 md:p-8">
+              <h2 className="text-xl md:text-2xl font-bold text-zinc-900 dark:text-white mb-4 md:mb-6">
                 📚 Roadmap por Objetivo de Carreira
               </h2>
               
-              <div className="space-y-6">
-                <div className="border-l-4 border-blue-600 pl-6">
-                  <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Estagiário (Agora)</h3>
-                  <ul className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+              <div className="space-y-4 md:space-y-6">
+                <div className="border-l-4 border-blue-600 pl-4 md:pl-6">
+                  <h3 className="text-base md:text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Estagiário (Agora)</h3>
+                  <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-zinc-700 dark:text-zinc-300">
                     <li className="flex gap-2">
-                      <span className="text-blue-600 dark:text-blue-400">→</span>
+                      <span className="text-blue-600 dark:text-blue-400 flex-shrink-0">→</span>
                       <span>React Fundamentals & Hooks</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-blue-600 dark:text-blue-400">→</span>
+                      <span className="text-blue-600 dark:text-blue-400 flex-shrink-0">→</span>
                       <span>TypeScript na prática</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-blue-600 dark:text-blue-400">→</span>
+                      <span className="text-blue-600 dark:text-blue-400 flex-shrink-0">→</span>
                       <span>Design Systems & Styled Components</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-blue-600 dark:text-blue-400">→</span>
+                      <span className="text-blue-600 dark:text-blue-400 flex-shrink-0">→</span>
                       <span>Integração com APIs (Axios)</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-blue-600 dark:text-blue-400">→</span>
+                      <span className="text-blue-600 dark:text-blue-400 flex-shrink-0">→</span>
                       <span>Testing básico (Jest + RTL)</span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="border-l-4 border-purple-600 pl-6">
-                  <h3 className="text-lg font-bold text-purple-600 dark:text-purple-400 mb-2">Junior (6-12 meses)</h3>
-                  <ul className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+                <div className="border-l-4 border-purple-600 pl-4 md:pl-6">
+                  <h3 className="text-base md:text-lg font-bold text-purple-600 dark:text-purple-400 mb-2">Junior (6-12 meses)</h3>
+                  <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-zinc-700 dark:text-zinc-300">
                     <li className="flex gap-2">
-                      <span className="text-purple-600 dark:text-purple-400">→</span>
+                      <span className="text-purple-600 dark:text-purple-400 flex-shrink-0">→</span>
                       <span>State Management (Redux/Zustand)</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-purple-600 dark:text-purple-400">→</span>
+                      <span className="text-purple-600 dark:text-purple-400 flex-shrink-0">→</span>
                       <span>Performance & Code Splitting</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-purple-600 dark:text-purple-400">→</span>
+                      <span className="text-purple-600 dark:text-purple-400 flex-shrink-0">→</span>
                       <span>Autenticação & Segurança Frontend</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-purple-600 dark:text-purple-400">→</span>
+                      <span className="text-purple-600 dark:text-purple-400 flex-shrink-0">→</span>
                       <span>AWS S3 + CloudFront Deploy</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-purple-600 dark:text-purple-400">→</span>
+                      <span className="text-purple-600 dark:text-purple-400 flex-shrink-0">→</span>
                       <span>CI/CD & GitHub Actions</span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="border-l-4 border-indigo-600 pl-6">
-                  <h3 className="text-lg font-bold text-indigo-600 dark:text-indigo-400 mb-2">Pleno (1-2 anos)</h3>
-                  <ul className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+                <div className="border-l-4 border-indigo-600 pl-4 md:pl-6">
+                  <h3 className="text-base md:text-lg font-bold text-indigo-600 dark:text-indigo-400 mb-2">Pleno (1-2 anos)</h3>
+                  <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-zinc-700 dark:text-zinc-300">
                     <li className="flex gap-2">
-                      <span className="text-indigo-600 dark:text-indigo-400">→</span>
+                      <span className="text-indigo-600 dark:text-indigo-400 flex-shrink-0">→</span>
                       <span>Next.js Full-Stack (SSR, SSG, API Routes)</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-indigo-600 dark:text-indigo-400">→</span>
+                      <span className="text-indigo-600 dark:text-indigo-400 flex-shrink-0">→</span>
                       <span>Observabilidade Frontend (Datadog, CloudWatch)</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-indigo-600 dark:text-indigo-400">→</span>
+                      <span className="text-indigo-600 dark:text-indigo-400 flex-shrink-0">→</span>
                       <span>Micro Frontends (Module Federation)</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-indigo-600 dark:text-indigo-400">→</span>
+                      <span className="text-indigo-600 dark:text-indigo-400 flex-shrink-0">→</span>
                       <span>Acessibilidade & Web Standards</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-indigo-600 dark:text-indigo-400">→</span>
+                      <span className="text-indigo-600 dark:text-indigo-400 flex-shrink-0">→</span>
                       <span>Backend conceitual (Node/NestJS básico)</span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="border-l-4 border-pink-600 pl-6">
-                  <h3 className="text-lg font-bold text-pink-600 dark:text-pink-400 mb-2">Senior (2+ anos)</h3>
-                  <ul className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+                <div className="border-l-4 border-pink-600 pl-4 md:pl-6">
+                  <h3 className="text-base md:text-lg font-bold text-pink-600 dark:text-pink-400 mb-2">Senior (2+ anos)</h3>
+                  <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-zinc-700 dark:text-zinc-300">
                     <li className="flex gap-2">
-                      <span className="text-pink-600 dark:text-pink-400">→</span>
+                      <span className="text-pink-600 dark:text-pink-400 flex-shrink-0">→</span>
                       <span>Arquitetura de Sistemas Distribuídos</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-pink-600 dark:text-pink-400">→</span>
+                      <span className="text-pink-600 dark:text-pink-400 flex-shrink-0">→</span>
                       <span>Event-Driven Patterns</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-pink-600 dark:text-pink-400">→</span>
+                      <span className="text-pink-600 dark:text-pink-400 flex-shrink-0">→</span>
                       <span>Backend em Profundidade</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-pink-600 dark:text-pink-400">→</span>
+                      <span className="text-pink-600 dark:text-pink-400 flex-shrink-0">→</span>
                       <span>Infrastructure & DevOps Avançado</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-pink-600 dark:text-pink-400">→</span>
+                      <span className="text-pink-600 dark:text-pink-400 flex-shrink-0">→</span>
                       <span>Mentorado & Tech Leadership</span>
                     </li>
                   </ul>
@@ -323,55 +323,55 @@ export default function RoadmapPage() {
               </div>
             </div>
             {/* Priority Guide */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 border border-zinc-200 dark:border-zinc-800">
-                <p className="text-sm font-semibold text-zinc-900 dark:text-white">🔴 Alta</p>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400">Frontend essencial (Estagiário/Junior)</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-4 mb-6 md:mb-8">
+              <div className="bg-white dark:bg-zinc-900 rounded-lg p-3 md:p-4 border border-zinc-200 dark:border-zinc-800">
+                <p className="text-xs md:text-sm font-semibold text-zinc-900 dark:text-white">🔴 Alta</p>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Frontend essencial (Estag/Junior)</p>
               </div>
-              <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 border border-zinc-200 dark:border-zinc-800">
-                <p className="text-sm font-semibold text-zinc-900 dark:text-white">🟠 Média</p>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400">Fullstack preparatório (Pleno)</p>
+              <div className="bg-white dark:bg-zinc-900 rounded-lg p-3 md:p-4 border border-zinc-200 dark:border-zinc-800">
+                <p className="text-xs md:text-sm font-semibold text-zinc-900 dark:text-white">🟠 Média</p>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Fullstack (Pleno)</p>
               </div>
-              <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 border border-zinc-200 dark:border-zinc-800">
-                <p className="text-sm font-semibold text-zinc-900 dark:text-white">🟡 Média-Baixa</p>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400">Arquitetura avançada (Senior)</p>
+              <div className="bg-white dark:bg-zinc-900 rounded-lg p-3 md:p-4 border border-zinc-200 dark:border-zinc-800">
+                <p className="text-xs md:text-sm font-semibold text-zinc-900 dark:text-white">🟡 Média-Baixa</p>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Arquitetura (Senior)</p>
               </div>
             </div>
 
             {/* Roadmap Items */}
-            <div className="space-y-8">
+            <div className="space-y-4 md:space-y-8">
               {roadmapItems.map((item, index) => (
                 <div key={index} className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                   {/* Header */}
-                  <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-6 border-b border-zinc-200 dark:border-zinc-800">
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex items-start gap-4 flex-1">
-                        <span className="text-4xl flex-shrink-0">{item.icon}</span>
-                        <div>
-                          <h2 className="text-xl font-bold text-zinc-900 dark:text-white">
+                  <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-4 md:p-6 border-b border-zinc-200 dark:border-zinc-800">
+                    <div className="flex items-start justify-between gap-2 md:gap-4">
+                      <div className="flex items-start gap-3 md:gap-4 flex-1 min-w-0">
+                        <span className="text-2xl md:text-4xl flex-shrink-0">{item.icon}</span>
+                        <div className="min-w-0">
+                          <h2 className="text-base md:text-xl font-bold text-zinc-900 dark:text-white break-words">
                             {item.section}
                           </h2>
                         </div>
                       </div>
-                      <span className="text-sm font-semibold px-3 py-1 bg-white dark:bg-zinc-800 rounded-full text-zinc-900 dark:text-white whitespace-nowrap">
+                      <span className="text-xs md:text-sm font-semibold px-2 md:px-3 py-1 bg-white dark:bg-zinc-800 rounded-full text-zinc-900 dark:text-white whitespace-nowrap flex-shrink-0">
                         {item.priority}
                       </span>
                     </div>
                   </div>
 
                   {/* Topics */}
-                  <div className="p-6 space-y-6">
+                  <div className="p-4 md:p-6 space-y-4 md:space-y-6">
                     {item.topics.map((topic, topicIndex) => (
                       <div key={topicIndex}>
-                        <h3 className="text-sm font-bold text-zinc-900 dark:text-white mb-3 flex items-center gap-2">
-                          <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400"></span>
-                          {topic.title}
+                        <h3 className="text-xs md:text-sm font-bold text-zinc-900 dark:text-white mb-2 md:mb-3 flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 flex-shrink-0"></span>
+                          <span>{topic.title}</span>
                         </h3>
                         <div className="flex flex-wrap gap-2 ml-4">
                           {topic.items.map((item, itemIndex) => (
                             <span
                               key={itemIndex}
-                              className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium"
+                              className="px-2 md:px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium"
                             >
                               {item}
                             </span>

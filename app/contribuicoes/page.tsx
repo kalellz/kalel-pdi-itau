@@ -94,38 +94,38 @@ export default function ContribuicoesPage() {
       <AnimatedGridPattern maxOpacity={0.1} />
       <Navbar />
       
-      <main className="relative z-10 flex flex-col w-full p-4 md:p-8 pt-24">
+      <main className="relative z-10 flex flex-col w-full p-4 pt-32 md:pt-24 md:p-8">
         <div className="flex items-center justify-center w-full">
-          <div className="w-full max-w-4xl space-y-12 py-12">
+          <div className="w-full max-w-4xl space-y-8 md:space-y-12 py-8 md:py-12">
           <div className="text-center">
-            <h1 className="p-8 text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 dark:from-blue-400 dark:to-purple-400">
+            <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 dark:from-blue-400 dark:to-purple-400">
               Principais Contribuições
             </h1>
-            <p className="text-lg text-zinc-600 dark:text-zinc-400">Impacto gerado durante o estágio</p>
+            <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400">Impacto gerado durante o estágio</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {contributions.map((contribution, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-5 md:p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               >
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="text-3xl flex-shrink-0">{contribution.icon}</div>
-                  <h3 className="text-lg font-bold text-zinc-900 dark:text-white">
+                <div className="flex items-start gap-3 md:gap-4 mb-4 md:mb-6">
+                  <div className="text-2xl md:text-3xl flex-shrink-0">{contribution.icon}</div>
+                  <h3 className="text-base md:text-lg font-bold text-zinc-900 dark:text-white leading-snug">
                     {contribution.title}
                   </h3>
                 </div>
 
                 {/* Descrição */}
-                <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed mb-6">
+                <p className="text-zinc-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4 md:mb-6">
                   {contribution.description}
                 </p>
 
                 {/* Tecnologias */}
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-zinc-900 dark:text-white mb-2 flex items-center gap-2">
-                    <span className="text-purple-600 dark:text-purple-400">🔧</span>
+                <div className="mb-4 md:mb-6">
+                  <h4 className="text-xs md:text-sm font-semibold text-zinc-900 dark:text-white mb-2 flex items-center gap-2">
+                    <span>🔧</span>
                     Tecnologias
                   </h4>
                   <div className="flex flex-wrap gap-2">
@@ -141,15 +141,15 @@ export default function ContribuicoesPage() {
                 </div>
 
                 {/* Impactos */}
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-zinc-900 dark:text-white mb-2 flex items-center gap-2">
-                    <span className="text-blue-600 dark:text-blue-400">📈</span>
+                <div className="mb-4 md:mb-6">
+                  <h4 className="text-xs md:text-sm font-semibold text-zinc-900 dark:text-white mb-2 flex items-center gap-2">
+                    <span>📈</span>
                     Impactos no Produto
                   </h4>
                   <ul className="space-y-1">
                     {contribution.impacts.map((impact, idx) => (
                       <li key={idx} className="flex gap-2 text-xs text-zinc-600 dark:text-zinc-400">
-                        <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                        <span className="text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0">•</span>
                         <span>{impact}</span>
                       </li>
                     ))}
