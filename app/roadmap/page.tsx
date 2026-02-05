@@ -210,68 +210,6 @@ export default function RoadmapPage() {
               <p className="text-lg text-zinc-600 dark:text-zinc-400">Tecnologias para 100% de manutenção do produto</p>
             </div>
 
-            {/* Priority Guide */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 border border-zinc-200 dark:border-zinc-800">
-                <p className="text-sm font-semibold text-zinc-900 dark:text-white">🔴 Alta</p>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400">Frontend essencial (Estagiário/Junior)</p>
-              </div>
-              <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 border border-zinc-200 dark:border-zinc-800">
-                <p className="text-sm font-semibold text-zinc-900 dark:text-white">🟠 Média</p>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400">Fullstack preparatório (Pleno)</p>
-              </div>
-              <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 border border-zinc-200 dark:border-zinc-800">
-                <p className="text-sm font-semibold text-zinc-900 dark:text-white">🟡 Média-Baixa</p>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400">Arquitetura avançada (Senior)</p>
-              </div>
-            </div>
-
-            {/* Roadmap Items */}
-            <div className="space-y-8">
-              {roadmapItems.map((item, index) => (
-                <div key={index} className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                  {/* Header */}
-                  <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-6 border-b border-zinc-200 dark:border-zinc-800">
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex items-start gap-4 flex-1">
-                        <span className="text-4xl flex-shrink-0">{item.icon}</span>
-                        <div>
-                          <h2 className="text-xl font-bold text-zinc-900 dark:text-white">
-                            {item.section}
-                          </h2>
-                        </div>
-                      </div>
-                      <span className="text-sm font-semibold px-3 py-1 bg-white dark:bg-zinc-800 rounded-full text-zinc-900 dark:text-white whitespace-nowrap">
-                        {item.priority}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Topics */}
-                  <div className="p-6 space-y-6">
-                    {item.topics.map((topic, topicIndex) => (
-                      <div key={topicIndex}>
-                        <h3 className="text-sm font-bold text-zinc-900 dark:text-white mb-3 flex items-center gap-2">
-                          <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400"></span>
-                          {topic.title}
-                        </h3>
-                        <div className="flex flex-wrap gap-2 ml-4">
-                          {topic.items.map((item, itemIndex) => (
-                            <span
-                              key={itemIndex}
-                              className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium"
-                            >
-                              {item}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-
             {/* Ordem de Estudo Sugerida */}
             <div className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl border border-purple-200 dark:border-purple-800 p-8">
               <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-6">
@@ -384,6 +322,68 @@ export default function RoadmapPage() {
                 </div>
               </div>
             </div>
+            {/* Priority Guide */}
+            <div className="grid grid-cols-3 gap-4 mb-8">
+              <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 border border-zinc-200 dark:border-zinc-800">
+                <p className="text-sm font-semibold text-zinc-900 dark:text-white">🔴 Alta</p>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Frontend essencial (Estagiário/Junior)</p>
+              </div>
+              <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 border border-zinc-200 dark:border-zinc-800">
+                <p className="text-sm font-semibold text-zinc-900 dark:text-white">🟠 Média</p>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Fullstack preparatório (Pleno)</p>
+              </div>
+              <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 border border-zinc-200 dark:border-zinc-800">
+                <p className="text-sm font-semibold text-zinc-900 dark:text-white">🟡 Média-Baixa</p>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Arquitetura avançada (Senior)</p>
+              </div>
+            </div>
+
+            {/* Roadmap Items */}
+            <div className="space-y-8">
+              {roadmapItems.map((item, index) => (
+                <div key={index} className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                  {/* Header */}
+                  <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-6 border-b border-zinc-200 dark:border-zinc-800">
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex items-start gap-4 flex-1">
+                        <span className="text-4xl flex-shrink-0">{item.icon}</span>
+                        <div>
+                          <h2 className="text-xl font-bold text-zinc-900 dark:text-white">
+                            {item.section}
+                          </h2>
+                        </div>
+                      </div>
+                      <span className="text-sm font-semibold px-3 py-1 bg-white dark:bg-zinc-800 rounded-full text-zinc-900 dark:text-white whitespace-nowrap">
+                        {item.priority}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Topics */}
+                  <div className="p-6 space-y-6">
+                    {item.topics.map((topic, topicIndex) => (
+                      <div key={topicIndex}>
+                        <h3 className="text-sm font-bold text-zinc-900 dark:text-white mb-3 flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400"></span>
+                          {topic.title}
+                        </h3>
+                        <div className="flex flex-wrap gap-2 ml-4">
+                          {topic.items.map((item, itemIndex) => (
+                            <span
+                              key={itemIndex}
+                              className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium"
+                            >
+                              {item}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
       </main>
