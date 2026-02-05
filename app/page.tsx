@@ -1,6 +1,7 @@
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern"
 import { InternshipTimer } from "@/components/ui/internship-timer"
 import { Navbar } from "@/components/ui/navbar"
+import { Github, Linkedin } from "lucide-react"
 
 export default function Home() {
   return (
@@ -53,6 +54,28 @@ export default function Home() {
                   Frontend
                 </p>
               </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex items-center gap-4 pt-6 mt-6 border-t border-zinc-200 dark:border-zinc-800">
+              <a 
+                href="https://github.com/kalellz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                aria-label="GitHub"
+              >
+                <Github className="w-6 h-6" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/kalelrodrigues/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
             </div>
           </div>
         </div>
