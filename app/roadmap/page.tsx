@@ -101,7 +101,7 @@ export default function RoadmapPage() {
       },
       {
         title: "Infraestrutura",
-        technologies: [{ name: "AWS", status: "red" }],
+        technologies: [{ name: "AWS", status: "yellow" }],
       },
       {
         title: "Infrastructure as Code",
