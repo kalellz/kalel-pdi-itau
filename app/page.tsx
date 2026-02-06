@@ -51,7 +51,7 @@ export default function Home() {
               <div>
                 <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-1">Foco Atual</p>
                 <p className="text-sm sm:text-base text-zinc-900 dark:text-white font-semibold">
-                  Frontend
+                  Frontend e engenharia de plataforma.
                 </p>
               </div>
             </div>

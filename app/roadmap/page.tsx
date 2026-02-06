@@ -1,6 +1,4 @@
 "use client";
-
-import { useState, useEffect } from "react";
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern";
 import { Navbar } from "@/components/ui/navbar";
 
