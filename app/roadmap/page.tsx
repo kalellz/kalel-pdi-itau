@@ -6,8 +6,8 @@ import { Navbar } from "@/components/ui/navbar"
 
 export default function RoadmapPage() {
   // Estado para controlar se as tecnologias são editáveis
-  const isEditableItauStatusPage = false  // Defina como false para apenas leitura
-  const isEditableItau = false  // Defina como false para apenas leitura
+  const isEditableItauStatusPage = true  // Defina como false para apenas leitura
+  const isEditableItau = true  // Defina como false para apenas leitura
 
   // Estado para rastrear tecnologias selecionadas com persistência
   const [selectedTechnologies, setSelectedTechnologies] = useState<Set<string>>(new Set())
