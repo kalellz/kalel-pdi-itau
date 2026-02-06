@@ -1,16 +1,38 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern"
 import { Navbar } from "@/components/ui/navbar"
 
 export default function RoadmapPage() {
   // Estado para controlar se as tecnologias são editáveis
-  const isEditableItauStatusPage = false  // Defina como false para apenas leitura
-  const isEditableItau = false  // Defina como false para apenas leitura
+  const isEditableItauStatusPage = true  // Defina como false para apenas leitura
+  const isEditableItau = true  // Defina como false para apenas leitura
 
-  // Estado para rastrear tecnologias selecionadas
+  // Estado para rastrear tecnologias selecionadas com persistência
   const [selectedTechnologies, setSelectedTechnologies] = useState<Set<string>>(new Set())
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  // Carregar do localStorage ao montar o componente
+  useEffect(() => {
+    const savedTechs = localStorage.getItem('selectedTechnologies')
+    if (savedTechs) {
+      try {
+        const techsArray = JSON.parse(savedTechs)
+        setSelectedTechnologies(new Set(techsArray))
+      } catch (error) {
+        console.error('Erro ao carregar tecnologias salvas:', error)
+      }
+    }
+    setIsLoaded(true)
+  }, [])
+
+  // Salvar no localStorage quando o estado mudar
+  useEffect(() => {
+    if (isLoaded) {
+      localStorage.setItem('selectedTechnologies', JSON.stringify(Array.from(selectedTechnologies)))
+    }
+  }, [selectedTechnologies, isLoaded])
 
   const toggleTechnology = (techName: string) => {
     if (!isEditableItauStatusPage && !isEditableItau) return
