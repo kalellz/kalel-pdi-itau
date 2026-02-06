@@ -40,18 +40,6 @@ export default function ContribuicoesPage() {
       ]
     },
     {
-      title: "Gestão e Evolução da Plataforma",
-      icon: "⚡",
-      description: "Atuo na melhoria contínua do Itaú Status Page, focando em alta performance, escalabilidade e usabilidade, sempre alinhado às práticas ágeis para otimizar processos e resultados.",
-      technologies: ["Scrum", "Performance Optimization", "Scalability", "UI/UX", "Documentation"],
-      impacts: [
-        "Melhoria contínua da plataforma",
-        "Alto desempenho e escalabilidade",
-        "Usabilidade otimizada",
-        "Alinhamento com práticas ágeis"
-      ]
-    },
-    {
       title: "Implementação da Escala Likert",
       icon: "📊",
       description: "Desenvolvi a implementação completa da escala Likert para análise de satisfação de usuários, criando componentes reutilizáveis e integração com o sistema de feedback.",
@@ -85,6 +73,18 @@ export default function ContribuicoesPage() {
         "Reutilização aumentada",
         "Manutenção simplificada",
         "Documentação padronizada do design system"
+      ]
+    },
+    {
+      title: "Gestão e Evolução da Plataforma",
+      icon: "⚡",
+      description: "Atuo na melhoria contínua do Itaú Status Page, focando em alta performance, escalabilidade e usabilidade, sempre alinhado às práticas ágeis para otimizar processos e resultados.",
+      technologies: ["Scrum", "Performance Optimization", "Scalability", "UI/UX", "Documentation"],
+      impacts: [
+        "Melhoria contínua da plataforma",
+        "Alto desempenho e escalabilidade",
+        "Usabilidade otimizada",
+        "Alinhamento com práticas ágeis"
       ]
     }
   ]
