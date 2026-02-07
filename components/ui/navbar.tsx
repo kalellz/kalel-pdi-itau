@@ -17,6 +17,7 @@ export function Navbar() {
     { href: "/objetivo-carreira", label: "Objetivo de Carreira" },
     { href: "/contribuicoes", label: "Contribuições" },
     { href: "/roadmap", label: "Roadmap" },
+    { href: "/soft-skills", label: "Soft Skills" },
   ];
 
   return (
