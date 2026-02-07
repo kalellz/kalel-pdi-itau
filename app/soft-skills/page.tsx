@@ -3,15 +3,56 @@ import { Navbar } from "@/components/ui/navbar";
 
 export default function SoftSkillsPage() {
   const doneItems = [
-    "Alinhamentos técnicos com a Eduarda (senior frontend no Itaú) e o Vinicius Souza (pleno no Itaú) para entrega dos MFE",
-    "Apresentação do modelo Atomic Design para outros frontends na comunidade do Command Center",
-    "Alinhamento com time de acessibilidade, para implementação do Hand Talk (Maya) no produto"
+    {
+      title: "Alinhamentos técnicos (MFE)",
+      description:
+        "Eduarda (senior frontend) e Vinicius Souza (pleno) no Itaú.",
+      icon: "🤝",
+    },
+    {
+      title: "Atomic Design",
+      description:
+        "Apresentação para outros frontends na comunidade do Command Center.",
+      icon: "⚛️",
+    },
+    {
+      title: "Acessibilidade (Hand Talk)",
+      description:
+        "Alinhamento com o time de acessibilidade para implementação do Maya.",
+      icon: "♿",
+    },
   ];
 
-  const pendingItems = [
-    "Obter uma certificação básica de Cloud (AWS Cloud Practitioner) até o mês 8 do estágio",
-    "Entregar 10 tasks de frontend com mais de 80% de cobertura de testes",
-    "Realizar um shadowing (acompanhamento) com um engenheiro de backend do time para entender o ciclo de vida da aplicação além do browser",
+  const developmentItems = [
+    {
+      title: "Protagonismo e Autonomia",
+      description:
+        "Evoluir na resolução de problemas complexos, buscando soluções antes de escalar, mas sabendo o momento exato de pedir ajuda.",
+      icon: "🚀",
+    },
+    {
+      title: "Comunicação Assertiva em Rituais",
+      description:
+        "Clareza na exposição de impedimentos e avanços em Dailies e Plannings, focando no valor gerado.",
+      icon: "🗣️",
+    },
+    {
+      title: "Pensamento Sistêmico",
+      description:
+        "Visão do todo: impacto do frontend na arquitetura de plataforma e custos de infraestrutura.",
+      icon: "🧠",
+    },
+    {
+      title: "Colaboração e Mentoria Inversa",
+      description:
+        "Compartilhar aprendizados de novas tecnologias com o time para fortalecer a cultura de aprendizado.",
+      icon: "🧩",
+    },
+    {
+      title: "Cultura Itaú",
+      description: "Atitude de Dono, Foco no Cliente e Simplicidade.",
+      icon: "🏛️",
+    },
   ];
 
   return (
@@ -31,49 +72,63 @@ export default function SoftSkillsPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <div className="space-y-6 md:space-y-8">
               <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-5 md:p-6 shadow-lg">
-                <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center gap-2 mb-5">
                   <span className="w-2.5 h-2.5 rounded-full bg-green-500 inline-block"></span>
                   <h2 className="text-base md:text-lg font-bold text-zinc-900 dark:text-white">
                     Já fiz
                   </h2>
                 </div>
-                <ul className="space-y-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                   {doneItems.map((item, index) => (
-                    <li
+                    <div
                       key={index}
-                      className="flex gap-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400"
+                      className="bg-zinc-50 dark:bg-zinc-950 rounded-xl border border-zinc-200 dark:border-zinc-800 p-4"
                     >
-                      <span className="text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0">
-                        ✓
-                      </span>
-                      <span>{item}</span>
-                    </li>
+                      <div className="flex items-start gap-3">
+                        <div className="text-xl flex-shrink-0">{item.icon}</div>
+                        <div>
+                          <p className="text-sm font-semibold text-zinc-900 dark:text-white">
+                            {item.title}
+                          </p>
+                          <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-1">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
 
               <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-5 md:p-6 shadow-lg">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span>
+                <div className="flex items-center gap-2 mb-5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-blue-500 inline-block"></span>
                   <h2 className="text-base md:text-lg font-bold text-zinc-900 dark:text-white">
-                    Falta
+                    Em desenvolvimento
                   </h2>
                 </div>
-                <ul className="space-y-2">
-                  {pendingItems.map((item, index) => (
-                    <li
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+                  {developmentItems.map((item, index) => (
+                    <div
                       key={index}
-                      className="flex gap-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400"
+                      className="bg-zinc-50 dark:bg-zinc-950 rounded-xl border border-zinc-200 dark:border-zinc-800 p-4"
                     >
-                      <span className="text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0">
-                        →
-                      </span>
-                      <span>{item}</span>
-                    </li>
+                      <div className="flex items-start gap-3">
+                        <div className="text-xl flex-shrink-0">{item.icon}</div>
+                        <div>
+                          <p className="text-sm font-semibold text-zinc-900 dark:text-white">
+                            {item.title}
+                          </p>
+                          <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-1">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             </div>
           </div>

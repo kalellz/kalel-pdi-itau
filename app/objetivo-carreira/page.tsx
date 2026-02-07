@@ -127,6 +127,44 @@ export default function ObjetivoCarreiraPage() {
                     </p>
                   </div>
                 </div>
+                <div className="mt-5 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-5 md:p-6">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span>
+                    <h2 className="text-base md:text-lg font-bold text-zinc-900 dark:text-white">
+                      Metas em andamento
+                    </h2>
+                  </div>
+                  <ul className="space-y-2">
+                    <li className="flex gap-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+                      <span className="text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0">
+                        →
+                      </span>
+                      <span>
+                        Obter uma certificação básica de Cloud (AWS Cloud
+                        Practitioner) até o final do estágio
+                      </span>
+                    </li>
+                    <li className="flex gap-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+                      <span className="text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0">
+                        →
+                      </span>
+                      <span>
+                        Entregar 10 tasks de frontend com mais de 80% de
+                        cobertura de testes
+                      </span>
+                    </li>
+                    <li className="flex gap-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+                      <span className="text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0">
+                        →
+                      </span>
+                      <span>
+                        Realizar um shadowing (acompanhamento) com um engenheiro
+                        de backend do time para entender o ciclo de vida da
+                        aplicação além do browser
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
