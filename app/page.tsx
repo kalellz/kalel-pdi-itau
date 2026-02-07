@@ -1,14 +1,14 @@
-import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern"
-import { InternshipTimer } from "@/components/ui/internship-timer"
-import { Navbar } from "@/components/ui/navbar"
-import { Github, Linkedin } from "lucide-react"
+import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern";
+import { InternshipTimer } from "@/components/ui/internship-timer";
+import { Navbar } from "@/components/ui/navbar";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-zinc-50 dark:bg-black overflow-hidden">
       <AnimatedGridPattern maxOpacity={0.1} />
       <Navbar />
-      
+
       <main className="relative z-10 flex items-center justify-center min-h-screen p-4 pt-32 md:pt-20 md:p-8">
         <div className="w-full max-w-4xl">
           {/* Header Section */}
@@ -16,7 +16,9 @@ export default function Home() {
             <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 dark:from-blue-400 dark:to-purple-400">
               Plano de Desenvolvimento Individual
             </h1>
-            <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400">Jornada de Carreira</p>
+            <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400">
+              Jornada de Carreira
+            </p>
           </div>
 
           {/* Current Position Card */}
@@ -36,20 +38,26 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 pt-6 border-t border-zinc-200 dark:border-zinc-800">
               <div>
-                <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-1">Período</p>
+                <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-1">
+                  Período
+                </p>
                 <p className="text-sm sm:text-base text-zinc-900 dark:text-white font-semibold">
                   Outubro 2025 - Presente
                 </p>
               </div>
               <div>
-                <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-1">Duração</p>
+                <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-1">
+                  Duração
+                </p>
                 <InternshipTimer />
               </div>
               <div>
-                <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-1">Stack Atual</p>
+                <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-1">
+                  Stack Atual
+                </p>
                 <p className="text-sm sm:text-base text-zinc-900 dark:text-white font-semibold">
                   Frontend e engenharia de plataforma.
                 </p>
@@ -57,25 +65,28 @@ export default function Home() {
             </div>
 
             {/* Social Links */}
-            <div className="flex items-center gap-4 pt-6 mt-6 border-t border-zinc-200 dark:border-zinc-800">
-              <a 
-                href="https://github.com/kalellz" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
-                aria-label="GitHub"
-              >
-                <Github className="w-5 h-5 sm:w-6 sm:h-6" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/kalelrodrigues/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
-              </a>
+            <div className="flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800 mt-6">
+              <div className="flex items-center gap-4 pt-3">
+                <a
+                  href="https://github.com/kalellz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                  aria-label="GitHub"
+                >
+                  <Github className="w-5 h-5 sm:w-6 sm:h-6" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/kalelrodrigues/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
+                </a>
+              </div>
+              <p className="text-xs text-zinc-600 dark:text-zinc-400">Last update: 07/02/2026</p>
             </div>
           </div>
         </div>
