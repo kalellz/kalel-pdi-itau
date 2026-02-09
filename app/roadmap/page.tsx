@@ -508,6 +508,104 @@ export default function RoadmapPage() {
               );
             })()}
             {(() => {
+              const studiedTechs: {
+                project: string;
+                section: string;
+                tech: Technology;
+              }[] = [];
+              [itauStatusPage, itau].forEach((component) => {
+                component.sections.forEach((section) => {
+                  section.technologies.forEach((tech) => {
+                    if (tech.status === "yellow") {
+                      studiedTechs.push({
+                        project: component.name,
+                        section: section.title,
+                        tech,
+                      });
+                    }
+                  });
+                });
+              });
+              if (studiedTechs.length === 0) return null;
+              const grouped: Record<string, Record<string, Technology[]>> = {};
+              studiedTechs.forEach((item) => {
+                if (!grouped[item.project]) {
+                  grouped[item.project] = {};
+                }
+                if (!grouped[item.project][item.section]) {
+                  grouped[item.project][item.section] = [];
+                }
+                grouped[item.project][item.section].push(item.tech);
+              });
+              let projectIndex = 0;
+              return (
+                <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-zinc-800 dark:to-zinc-900 p-4 md:p-8 rounded-xl border border-yellow-200 dark:border-yellow-800/30">
+                  <div>
+                    <h2 className="text-xl md:text-2xl font-bold text-yellow-900 dark:text-yellow-100">
+                      Já Estudei ({studiedTechs.length} tecnologia
+                      {studiedTechs.length !== 1 ? "s" : ""})
+                    </h2>
+                    <p className="text-sm md:text-base text-yellow-800 dark:text-yellow-200 mt-2">
+                      Tecnologias que já foram estudadas
+                    </p>
+                  </div>
+                  <div className="mt-6 space-y-6 p-4 md:p-6">
+                    {Object.entries(grouped).map(([project, sections]) => (
+                      <div
+                        key={project}
+                        className={
+                          projectIndex++ > 0
+                            ? "pt-6 border-t border-yellow-200 dark:border-yellow-800"
+                            : ""
+                        }
+                      >
+                        <h3 className="text-base md:text-lg font-bold text-yellow-900 dark:text-yellow-100 mb-4 md:mb-5">
+                          {project}
+                        </h3>
+                        <div className="space-y-4 md:space-y-5 pl-0 md:pl-4">
+                          {Object.entries(sections).map(
+                            ([sectionTitle, techs]) => (
+                              <div key={sectionTitle}>
+                                <p className="text-xs md:text-sm font-semibold text-yellow-700 dark:text-yellow-300 mb-2 md:mb-3">
+                                  {sectionTitle}
+                                </p>
+                                <div className="space-y-2 md:space-y-2">
+                                  {techs.map((tech, techIndex) => {
+                                    const detail = technologyDetails[tech.name];
+                                    return (
+                                      <div
+                                        key={techIndex}
+                                        className="bg-white dark:bg-zinc-900 p-3 md:p-4 rounded-lg border border-yellow-200 dark:border-yellow-800/50"
+                                      >
+                                        <div className="flex items-start gap-2 md:gap-3">
+                                          <span className="text-yellow-600 dark:text-yellow-400 font-bold flex-shrink-0">
+                                            •
+                                          </span>
+                                          <div className="flex-1 min-w-0">
+                                            <p className="font-semibold text-yellow-900 dark:text-yellow-100 text-sm md:text-base">
+                                              {detail?.name || tech.name}
+                                            </p>
+                                            <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+                                              {detail?.description ||
+                                                "Tecnologia estudada"}
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            ),
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
+            {(() => {
               const missingTechs: {
                 project: string;
                 section: string;
@@ -516,7 +614,7 @@ export default function RoadmapPage() {
               [itauStatusPage, itau].forEach((component) => {
                 component.sections.forEach((section) => {
                   section.technologies.forEach((tech) => {
-                    if (tech.status !== "green") {
+                    if (tech.status === "red") {
                       missingTechs.push({
                         project: component.name,
                         section: section.title,
