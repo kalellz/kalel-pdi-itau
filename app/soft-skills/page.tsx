@@ -64,7 +64,7 @@ export default function SoftSkillsPage() {
         <div className="flex items-center justify-center w-full">
           <div className="w-full max-w-4xl space-y-6 md:space-y-8 py-8 md:py-12">
             <div className="text-center">
-              <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 dark:from-blue-400 dark:to-purple-400">
+              <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent mb-2 dark:from-orange-400 dark:to-yellow-400">
                 Soft Skills
               </h1>
               <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400">
@@ -104,7 +104,7 @@ export default function SoftSkillsPage() {
 
               <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-5 md:p-6 shadow-lg">
                 <div className="flex items-center gap-2 mb-5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-blue-500 inline-block"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-orange-500 inline-block"></span>
                   <h2 className="text-base md:text-lg font-bold text-zinc-900 dark:text-white">
                     Em desenvolvimento
                   </h2>

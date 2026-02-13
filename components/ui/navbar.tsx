@@ -29,8 +29,8 @@ export function Navbar() {
             className={`
           ${
             isActive("/")
-              ? "font-bold text-lg text-zinc-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-              : "text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100 dark:hover:bg-zinc-800"
+              ? "font-bold text-lg text-zinc-900 dark:text-white hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+              : "text-zinc-600 dark:text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-zinc-100 dark:hover:bg-zinc-800"
           }`}
           >
             Sobre
@@ -53,8 +53,8 @@ export function Navbar() {
                 href={link.href}
                 className={`text-sm font-medium transition-all duration-200 py-2 px-3 rounded-lg whitespace-nowrap ${
                   isActive(link.href)
-                    ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 border-b-2 border-blue-600 dark:border-blue-400"
-                    : "text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                    ? "text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20 border-b-2 border-orange-600 dark:border-orange-400"
+                    : "text-zinc-600 dark:text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-zinc-100 dark:hover:bg-zinc-800"
                 }`}
               >
                 {link.label}
@@ -73,8 +73,8 @@ export function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className={`block text-sm font-medium transition-all duration-200 py-2 px-3 rounded-lg ${
                   isActive(link.href)
-                    ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20"
-                    : "text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                    ? "text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20"
+                    : "text-zinc-600 dark:text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-zinc-100 dark:hover:bg-zinc-800"
                 }`}
               >
                 {link.label}

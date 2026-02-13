@@ -21,7 +21,7 @@ export default function ObjetivoCarreiraPage() {
           <div className="w-full max-w-4xl space-y-6 md:space-y-8 py-8 md:py-12">
             {/* Header Section */}
             <div className="text-center mb-8 md:mb-12">
-              <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 dark:from-blue-400 dark:to-purple-400">
+              <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent mb-2 dark:from-orange-400 dark:to-yellow-400">
                 Objetivo de Carreira
               </h1>
               <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400">
@@ -34,12 +34,12 @@ export default function ObjetivoCarreiraPage() {
               <h3 className="text-xl md:text-2xl font-bold text-zinc-900 dark:text-white mb-6 md:mb-8">
                 Objetivo de Carreira
               </h3>
-              <p className="max-w-3xl rounded-md border-l-4 border-blue-500 bg-blue-50 px-4 py-3 text-sm text-slate-700">
+              <p className="max-w-3xl rounded-md border-l-4 border-orange-500 bg-orange-50 px-4 py-3 text-sm text-slate-700">
                 Quero me desenvolver como engenheiro frontend, ampliando minha
                 visão técnica ao longo da carreira para sustentar uma evolução
                 futura como profissional fullstack.
               </p>
-              <p className="mt-4 text-base md:text-lg text-blue-600 dark:text-blue-400 font-semibold mb-6">
+              <p className="mt-4 text-base md:text-lg text-orange-600 dark:text-orange-400 font-semibold mb-6">
                 ANL ENGENHARIA TI
               </p>
               <div className="space-y-3 md:space-y-4">
@@ -54,7 +54,7 @@ export default function ObjetivoCarreiraPage() {
                       w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center font-bold text-white text-sm md:text-base flex-shrink-0
                       ${
                         item.isCurrent
-                          ? "bg-blue-600 dark:bg-blue-500 ring-4 ring-blue-300 dark:ring-blue-600"
+                          ? "bg-orange-300 dark:bg-orange-500 ring-3 ring-orange-400 dark:ring-orange-400"
                           : "bg-zinc-400 dark:bg-zinc-600"
                       }
                     `}
@@ -91,7 +91,7 @@ export default function ObjetivoCarreiraPage() {
                 </h4>
 
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4">
-                  <div className="p-3 md:p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                  <div className="p-3 md:p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800">
                     <p className="text-xs text-zinc-600 dark:text-zinc-400 mb-1">
                       Estagiário
                     </p>
@@ -100,7 +100,7 @@ export default function ObjetivoCarreiraPage() {
                     </p>
                   </div>
 
-                  <div className="p-3 md:p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
+                  <div className="p-3 md:p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
                     <p className="text-xs text-zinc-600 dark:text-zinc-400 mb-1">
                       Júnior
                     </p>

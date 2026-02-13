@@ -13,7 +13,7 @@ export default function RoadmapPage() {
   const renderTechComponent = (component: TechComponent) => (
     <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-4 md:p-6 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="bg-gradient-to-r from-gray-50 to-white-50 dark:from-gray-900/20 dark:to-white-900/20 p-4 md:p-6 border-b border-zinc-200 dark:border-zinc-800">
         <h2 className="text-xl md:text-2xl font-bold text-zinc-900 dark:text-white">
           {component.name}
         </h2>
@@ -67,7 +67,7 @@ export default function RoadmapPage() {
           <div className="w-full max-w-4xl space-y-6 md:space-y-8 py-8 md:py-12">
             {/* Header */}
             <div className="text-center">
-              <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 dark:from-blue-400 dark:to-purple-400">
+              <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent mb-2 dark:from-orange-400 dark:to-yellow-400">
                 Stack de Tecnologias
               </h1>
               <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400">
@@ -229,8 +229,8 @@ export default function RoadmapPage() {
               });
               let projectIndex = 0;
               return (
-                <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-zinc-800 dark:to-zinc-900 p-4 md:p-8 rounded-xl border border-yellow-200 dark:border-yellow-800/30">
-                  <div>
+                <div className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-2xl border border-orange-200 dark:border-orange-800 overflow-hidden shadow-lg">
+                  <div className="bg-gradient-to-r from-yellow-50 to-orange-100 dark:from-green-900/30 dark:to-emerald-900/30 p-4 md:p-6 border-b border-orange-200 dark:border-orange-800">
                     <h2 className="text-xl md:text-2xl font-bold text-yellow-900 dark:text-yellow-100">
                       Já Estudei ({studiedTechs.length} tecnologia
                       {studiedTechs.length !== 1 ? "s" : ""})
@@ -245,7 +245,7 @@ export default function RoadmapPage() {
                         key={project}
                         className={
                           projectIndex++ > 0
-                            ? "pt-6 border-t border-yellow-200 dark:border-yellow-800"
+                            ? "pt-6 border-t border-yellow-400 dark:border-yellow-800"
                             : ""
                         }
                       >
@@ -265,7 +265,7 @@ export default function RoadmapPage() {
                                     return (
                                       <div
                                         key={techIndex}
-                                        className="bg-white dark:bg-zinc-900 p-3 md:p-4 rounded-lg border border-yellow-200 dark:border-yellow-800/50"
+                                        className="bg-white dark:bg-zinc-900 p-3 md:p-4 rounded-lg border border-yellow-400 dark:border-orange-800/50"
                                       >
                                         <div className="flex items-start gap-2 md:gap-3">
                                           <span className="text-yellow-600 dark:text-yellow-400 font-bold flex-shrink-0">
@@ -324,8 +324,8 @@ export default function RoadmapPage() {
               });
               let projectIndex = 0;
               return (
-                <div className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-2xl border border-red-200 dark:border-red-800 overflow-hidden shadow-lg">
-                  <div className="bg-gradient-to-r from-red-100 to-orange-100 dark:from-red-900/30 dark:to-orange-900/30 p-4 md:p-6 border-b border-red-200 dark:border-red-800">
+                <div className="bg-gradient-to-r from-red-50 to-red-50 dark:from-red-900/20 dark:to-red-900/20 rounded-2xl border border-red-200 dark:border-red-800 overflow-hidden shadow-lg">
+                  <div className="bg-gradient-to-r from-red-100 to-red-100 dark:from-red-900/30 dark:to-red-900/30 p-4 md:p-6 border-b border-red-200 dark:border-red-800">
                     <h2 className="text-xl md:text-2xl font-bold text-red-900 dark:text-red-100">
                       📚 Ainda Faltam Dominar ({missingTechs.length} tecnologia
                       {missingTechs.length !== 1 ? "s" : ""})

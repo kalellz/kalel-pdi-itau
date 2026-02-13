@@ -98,7 +98,7 @@ export default function ContribuicoesPage() {
         <div className="flex items-center justify-center w-full">
           <div className="w-full max-w-4xl space-y-8 md:space-y-12 py-8 md:py-12">
           <div className="text-center">
-            <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 dark:from-blue-400 dark:to-purple-400">
+            <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent mb-2 dark:from-orange-400 dark:to-yellow-400">
               Principais Contribuições
             </h1>
             <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400">Impacto gerado durante o estágio</p>
@@ -132,7 +132,7 @@ export default function ContribuicoesPage() {
                     {contribution.technologies.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded text-xs font-medium"
+                        className="px-2 py-1 bg-orange-100 dark:bg-orange-900/30 text-red-700 dark:text-red-300 rounded text-xs font-medium"
                       >
                         {tech}
                       </span>
@@ -149,7 +149,7 @@ export default function ContribuicoesPage() {
                   <ul className="space-y-1">
                     {contribution.impacts.map((impact, idx) => (
                       <li key={idx} className="flex gap-2 text-xs text-zinc-600 dark:text-zinc-400">
-                        <span className="text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0">•</span>
+                        <span className="text-orange-600 dark:text-orange-400 mt-0.5 flex-shrink-0">•</span>
                         <span>{impact}</span>
                       </li>
                     ))}

@@ -13,7 +13,7 @@ export default function Home() {
         <div className="w-full max-w-4xl">
           {/* Header Section */}
           <div className="text-center mb-8 md:mb-12">
-            <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 dark:from-blue-400 dark:to-purple-400">
+            <h1 className="px-4 md:p-8 text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent mb-2 dark:from-orange-400 dark:to-yellow-400">
               Plano de Desenvolvimento Individual
             </h1>
             <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400">
@@ -28,12 +28,12 @@ export default function Home() {
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-zinc-900 dark:text-white mb-2">
                   Kalel Rodrigues
                 </h2>
-                <p className="text-base sm:text-lg text-blue-600 dark:text-blue-400 font-semibold">
+                <p className="text-base sm:text-lg text-orange-600 dark:text-orange-400 font-semibold">
                   Estagiário em Engenharia de Plataforma
                 </p>
               </div>
-              <div className="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-                <p className="text-blue-700 dark:text-blue-300 font-semibold text-sm">
+              <div className="px-4 py-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg">
+                <p className="text-orange-700 dark:text-orange-300 font-semibold text-sm">
                   Itaú Unibanco
                 </p>
               </div>
