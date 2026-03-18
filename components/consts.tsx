@@ -28,9 +28,9 @@ export const itauStatusPage: TechComponent = {
     {
       title: "Backend",
       technologies: [
-        { name: "Node.js", status: "yellow" },
-        { name: "Nest.js", status: "yellow" },
-        { name: "PrismaORM", status: "yellow" },
+        { name: "Node.js", status: "green" },
+        { name: "Nest.js", status: "green" },
+        { name: "PrismaORM", status: "green" },
         { name: "Java", status: "yellow" },
         { name: "Quarkus", status: "red" },
         { name: "Apache Camel", status: "red" },
@@ -39,11 +39,11 @@ export const itauStatusPage: TechComponent = {
     {
       title: "Infraestrutura e Serviços AWS",
       technologies: [
-        { name: "CloudFront (CDN)", status: "yellow" },
+        { name: "CloudFront (CDN)", status: "green" },
         { name: "API Gateway", status: "yellow" },
         { name: "Lambda", status: "yellow" },
-        { name: "ECS", status: "yellow" },
-        { name: "ELB", status: "yellow" },
+        { name: "ECS", status: "green" },
+        { name: "ELB", status: "green" },
         { name: "S3", status: "yellow" },
         { name: "DynamoDB", status: "yellow" },
         { name: "EventBridge", status: "red" },
@@ -52,8 +52,8 @@ export const itauStatusPage: TechComponent = {
         { name: "Secrets Manager", status: "red" },
         { name: "SQS", status: "red" },
         { name: "SNS", status: "red" },
-        { name: "IAM", status: "red" },
-        { name: "Route53", status: "red" },
+        { name: "IAM", status: "yellow" },
+        { name: "Route53", status: "green" },
         { name: "Cognito / SSO", status: "red" },
       ],
     },
@@ -70,7 +70,7 @@ export const itauStatusPage: TechComponent = {
     {
       title: "Infrastructure as Code",
       technologies: [
-        { name: "Terraform", status: "red" },
+        { name: "Terraform", status: "green" },
         { name: "CloudFormation", status: "red" },
       ],
     },
@@ -96,11 +96,11 @@ export const itau: TechComponent = {
     },
     {
       title: "Infraestrutura",
-      technologies: [{ name: "AWS", status: "yellow" }],
+      technologies: [{ name: "AWS", status: "green" }],
     },
     {
       title: "Infrastructure as Code",
-      technologies: [{ name: "Terraform", status: "red" }],
+      technologies: [{ name: "Terraform", status: "green" }],
     },
   ],
 };
