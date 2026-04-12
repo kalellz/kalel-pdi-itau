@@ -144,25 +144,6 @@ export default function ObjetivoCarreiraPage() {
                         Practitioner) até o final do estágio
                       </span>
                     </li>
-                    <li className="flex gap-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
-                      <span className="text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0">
-                        →
-                      </span>
-                      <span>
-                        Entregar 10 tasks de frontend com mais de 80% de
-                        cobertura de testes
-                      </span>
-                    </li>
-                    <li className="flex gap-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
-                      <span className="text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0">
-                        →
-                      </span>
-                      <span>
-                        Realizar um shadowing (acompanhamento) com um engenheiro
-                        de backend do time para entender o ciclo de vida da
-                        aplicação além do browser
-                      </span>
-                    </li>
                   </ul>
                 </div>
               </div>
